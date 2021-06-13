@@ -1,0 +1,2 @@
+# foreman-renovate-config
+ 

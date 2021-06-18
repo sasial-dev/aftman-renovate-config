@@ -11,7 +11,7 @@
     ],
     "packageRules": [
       {
-        "matchDatasources": ["github-releases", "github-tags"],
+        "matchPaths": ["foreman.toml"],
         "extractVersion": "^v?(?<version>.*)$"
       }
     ]

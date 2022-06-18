@@ -4,14 +4,14 @@
     ],
     "regexManagers": [
       {
-        "fileMatch": ["^foreman.toml$"],
+        "fileMatch": ["^aftman.toml$"],
         "matchStrings": [".+ = { source = \"(?<depName>.+)\", version = \"(?<currentValue>.+)\" }"],
         "datasourceTemplate": "github-releases"
       }
     ],
     "packageRules": [
       {
-        "matchPaths": ["foreman.toml"],
+        "matchPaths": ["aftman.toml"],
         "extractVersion": "^v?(?<version>.*)$"
       }
     ]

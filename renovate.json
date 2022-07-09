@@ -5,7 +5,7 @@
     "regexManagers": [
       {
         "fileMatch": ["^aftman.toml$"],
-        "matchStrings": [".+ = { source = \"(?<depName>.+)\", version = \"(?<currentValue>.+)\" }"],
+        "matchStrings": [".+ = { name = \"(?<depName>.+)\", version = \"(?<currentValue>.+)\" }", ".+ = (?<depName>.+)@(?<currentValue>.+)"],
         "datasourceTemplate": "github-releases"
       }
     ],
@@ -16,4 +16,3 @@
       }
     ]
 }
-  

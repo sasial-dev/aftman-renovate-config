@@ -4,7 +4,7 @@
     ],
     "customManagers": [
       {
-        "customType": "regex:aftman",
+        "customType": "regex",
         "fileMatch": ["^aftman.toml$"],
         "matchStrings": [".+ = { name = \"(?<depName>.+)\", version = \"(?<currentValue>.+)\" }", ".+ = (?<depName>.+)@(?<currentValue>.+)"],
         "datasourceTemplate": "github-releases"

@@ -6,7 +6,7 @@ It can be added by changing your config file:
 ```json
 {
     "extends": [
-      "github>kineticwallet/aftman-renovate-config"
+      "github>sasial-dev/aftman-renovate-config"
     ]
 }
 ```

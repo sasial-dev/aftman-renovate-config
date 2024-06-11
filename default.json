@@ -2,10 +2,11 @@
     "extends": [
       "config:base"
     ],
-    "regexManagers": [
+    "customManagers": [
       {
+        "customType": "regex",
         "fileMatch": ["^aftman.toml$"],
-        "matchStrings": [".+ = { name = \"(?<depName>.+)\", version = \"(?<currentValue>.+)\" }", ".+ = (?<depName>.+)@(?<currentValue>.+)"],
+        "matchStrings": [".+ = { name = \"(?<depName>.+)\", version = \"(?<currentValue>.+)\" }", ".+ = \"(?<depName>.+)@(?<currentValue>.+)\""],
         "datasourceTemplate": "github-releases"
       }
     ],
